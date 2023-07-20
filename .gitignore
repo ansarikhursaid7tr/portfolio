@@ -1,0 +1,17 @@
+# Django
+*.log
+
+# Python
+*.egg-info
+*.pot
+*.py[co]
+__pycache__
+
+# Environment
+venv/
+.venv/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
