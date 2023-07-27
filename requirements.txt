@@ -12,7 +12,7 @@ botocore==1.29.69
     # via
     #   boto3
     #   s3transfer
-django==4.1.6
+Django==4.1.6
     # via
     #   -r requirements.in
     #   django-ranged-response
@@ -84,6 +84,6 @@ tomli==2.0.1
 typing_extensions==4.7.1
 virtualenv==20.19.0
 zipp==3.15.0
-pysqlite=2.8.2
+pysqlite==2.8.2
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
