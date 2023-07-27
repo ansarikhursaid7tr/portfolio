@@ -137,8 +137,12 @@ if DATABASE_URL:
 else:
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "HOST": "portfolio.postgres.database.azure.com",
+            "USER": "nightowl",
+            "PORT": "5432",
+            "NAME": "postgres",
+            "PASSWORD": "A1stard1dmi7@"
         }
     }
 
