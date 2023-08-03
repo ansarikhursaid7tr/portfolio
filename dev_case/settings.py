@@ -27,6 +27,7 @@ ALLOWED_HOSTS = env.list(
         "127.0.0.1",
         "localhost",
         "0.0.0.0",
+        "*"
     ],
 )
 
