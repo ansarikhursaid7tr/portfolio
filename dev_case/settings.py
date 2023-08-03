@@ -175,8 +175,10 @@ USE_TZ = True
 
 # Static files & Media
 
-STATICFILES_DIRS = (str(BASE_DIR.joinpath("static")),)
-STATIC_ROOT = str(BASE_DIR.joinpath("staticfiles"))
+#STATICFILES_DIRS = (str(BASE_DIR.joinpath("static")),)
+#STATIC_ROOT = str(BASE_DIR.joinpath("staticfiles"))
+STATICFILES_DIRS = [BASE_DIR / "static"] # new
+STATIC_ROOT = BASE_DIR / "staticfiles" # new
 MEDIA_ROOT = str(BASE_DIR.joinpath("media"))
 
 if USE_S3_STORAGE:

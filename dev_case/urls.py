@@ -11,6 +11,8 @@ from .settings import ADMIN_LOCATION
 from .sitemaps import BlogPostSitemap, PageSitemap, ProjectSitemap, StaticSitemap
 from .views import about, home, robots_txt, search
 
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns # new
+
 sitemaps = {
     "blog": BlogPostSitemap,
     "project": ProjectSitemap,
@@ -45,3 +47,5 @@ if settings.DEBUG:
     urlpatterns += [
         path("__debug__/", include(debug_toolbar.urls)),
     ]
+
+urlpatterns += staticfiles_urlpatterns() # new  
